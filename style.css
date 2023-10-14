@@ -1,0 +1,58 @@
+body{
+    background-color: darkblue;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.head h1{
+    color: #ccc;
+    font-size: 60px;
+}
+
+
+.head input{
+    padding: 3px;
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+    
+}
+
+h3{
+    font-size: 23px;
+}
+
+.body {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.body .unit1{
+    background-color: crimson;
+    color: white;
+    width: 300px;
+    text-align: center;
+    margin-bottom: 14px;
+    padding: 5px;
+}
+
+.body .unit2{
+    background-color: rgb(18, 119, 18);
+    width: 300px;
+    color: white;
+    text-align: center;
+    margin-bottom: 14px;
+    padding: 5px;
+}
+
+.body .unit3{
+    background-color: rgb(23, 170, 146);
+    width: 300px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>Weight Converter</title>
+</head>
+
+<body>
+    <div class="head">
+        <h1>Unit Converter</h1>
+
+        <input type="number" id="inputField" placeholder="Enter Metre">
+    </div>
+
+    <div class="body">
+        <div class="unit1">
+            <h3>Decimeter: <span id="deci"></span></h3>
+        </div>
+
+        <div class="unit2">
+            <h3>Centimeter: <span id="centi"></span></h3>
+        </div>
+
+        <div class="unit3">
+            <h3>Kilometer: <span id="kilo"></span></h3>
+        </div>
+    </div>
+
+    <script>
+        $(".body").hide();
+        $("#inputField").on("input", function(e){
+            $(".body").show();
+            var metre = e.currentTarget.value;
+
+            // code for the decimetre conversion
+            $("span#deci").text(metre*10);
+
+            // code for the centimetre conversion
+            $("span#centi").text(metre*100);
+
+            // code for the kilometre conversion
+            $("span#kilo").text(metre*1000);
+        })
+    </script>
+</body>
+
+</html>
